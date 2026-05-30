@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Vote Helper | Sriram Kannan</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="particles" aria-hidden="true"></div>
+
+  <!-- ===== NAV ===== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav-brand">SK<span style="color:var(--purple);">_</span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="project1.html">FIFA Dashboard</a></li>
+      <li><a href="project2.html" class="active" aria-current="page">AI Vote Helper</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-content">
+
+    <!-- ===== PROJECT HERO ===== -->
+    <div class="project-hero fade-in" aria-label="Project header">
+      <p class="project-hero-label">// project_02</p>
+      <h1 class="project-hero-title">Dublin Mayoral Election<br />AI Vote Helper</h1>
+      <p class="project-hero-sub">Independent Project: EHS AI Club &amp; Civic Technology &nbsp;|&nbsp; 2024</p>
+    </div>
+
+    <!-- ===== TWO-COLUMN LAYOUT ===== -->
+    <div class="project-layout">
+
+      <!-- LEFT: Description -->
+      <div class="project-desc">
+
+        <!-- About the project -->
+        <div class="fade-in">
+          <h2 class="section-label" style="margin-bottom:0.5rem;">About the Project</h2>
+          <div class="section-divider" style="margin-bottom:1rem;"></div>
+          <p>
+            The Dublin Mayoral Election AI Vote Helper is a civic technology tool designed to help
+            Dublin residents make informed voting decisions by comparing mayoral candidates through
+            AI-powered analysis. Users can ask questions in natural language and receive clear,
+            unbiased summaries and side-by-side comparisons of candidate positions on key local issues.
+          </p>
+          <p>
+            Built using <strong style="color:var(--purple);">Ollama</strong> with custom prompt engineering,
+            the tool processes campaign manifestos, policy statements, and public records to generate
+            fair and accurate candidate profiles. The project involved collecting and structuring
+            political data from publicly available sources, designing a clean and accessible user
+            interface, and applying state-of-the-art AI to a real-world civic problem. The site was
+            hosted on <strong style="color:var(--purple);">Vercel</strong>, making it accessible to Dublin voters during the 2024 election.
+          </p>
+        </div>
+
+        <!-- Skills -->
+        <div class="fade-in">
+          <h3 class="section-label" style="margin-bottom:0.6rem;">Skills &amp; Tools</h3>
+          <div class="badges" role="list" aria-label="Skills used">
+            <span class="badge" role="listitem">Ollama</span>
+            <span class="badge" role="listitem">Prompt Engineering</span>
+            <span class="badge" role="listitem">NLP</span>
+            <span class="badge" role="listitem">Civic Technology</span>
+            <span class="badge" role="listitem">Data Collection</span>
+            <span class="badge" role="listitem">UI Design</span>
+            <span class="badge" role="listitem">Vercel</span>
+            <span class="badge" role="listitem">HTML/CSS</span>
+          </div>
+        </div>
+
+        <!-- Key features -->
+        <div class="fade-in">
+          <h3 class="section-label" style="margin-bottom:0.75rem;">Key Features</h3>
+          <div style="display:flex; flex-direction:column; gap:0.6rem; margin-bottom:1.25rem;">
+            <div class="resume-card" style="padding:0.85rem 1rem; margin-bottom:0;">
+              <div style="display:flex; align-items:center; gap:0.75rem;">
+                <span style="color:var(--blue); font-size:0.85rem; font-family:var(--font-mono); font-weight:700;">[Q]</span>
+                <span style="font-size:0.9rem; color:var(--text-muted);">Natural language Q&amp;A about candidate policies</span>
+              </div>
+            </div>
+            <div class="resume-card" style="padding:0.85rem 1rem; margin-bottom:0;">
+              <div style="display:flex; align-items:center; gap:0.75rem;">
+                <span style="color:var(--blue); font-size:0.85rem; font-family:var(--font-mono); font-weight:700;">[=]</span>
+                <span style="font-size:0.9rem; color:var(--text-muted);">Side-by-side candidate comparison summaries</span>
+              </div>
+            </div>
+            <div class="resume-card" style="padding:0.85rem 1rem; margin-bottom:0;">
+              <div style="display:flex; align-items:center; gap:0.75rem;">
+                <span style="color:var(--blue); font-size:0.85rem; font-family:var(--font-mono); font-weight:700;">[*]</span>
+                <span style="font-size:0.9rem; color:var(--text-muted);">Custom prompt engineering for accuracy &amp; fairness</span>
+              </div>
+            </div>
+            <div class="resume-card" style="padding:0.85rem 1rem; margin-bottom:0;">
+              <div style="display:flex; align-items:center; gap:0.75rem;">
+                <span style="color:var(--blue); font-size:0.85rem; font-family:var(--font-mono); font-weight:700;">[d]</span>
+                <span style="font-size:0.9rem; color:var(--text-muted);">Structured data collected from public records</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- What I learned -->
+        <div class="fade-in">
+          <h3 class="section-label" style="margin-bottom:0.6rem;">What I Learned</h3>
+          <div class="section-divider" style="margin-bottom:1rem;"></div>
+          <p>
+            This project gave me real hands-on experience applying large language models to a
+            genuine civic problem in my own community, something that felt far more meaningful than
+            a textbook exercise. I learned that <strong style="color:var(--purple);">prompt engineering is both an art and a science</strong>:
+            small changes in how you frame a question to an LLM can dramatically affect the accuracy,
+            fairness, and tone of its response, especially when dealing with politically sensitive topics.
+          </p>
+          <p>
+            I also developed skills in collecting and structuring unstructured political data from
+            public sources (press releases, interviews, campaign websites) and transforming it into
+            a format the model could reason about reliably. Most importantly, this project reinforced
+            my belief that AI can be a powerful tool for <strong style="color:var(--purple);">improving civic engagement and accessibility</strong>,
+            helping voters who lack the time to research every candidate still make informed decisions
+            that reflect their values.
+          </p>
+        </div>
+
+        <!-- CTA -->
+        <div class="fade-in" style="margin-top:1.5rem;">
+          <a href="https://github.com/Sriram1000/dublin-ai-vote-helper" class="btn btn-primary" target="_blank" rel="noopener noreferrer" aria-label="View AI Vote Helper project">View Project</a>
+        </div>
+
+      </div><!-- /project-desc -->
+
+      <!-- RIGHT: Visual -->
+      <div class="project-visual fade-in" aria-label="Project preview">
+        <div style="display:flex; flex-direction:column; gap:0.75rem;">
+          <img src="vote-helper-chatbot.png" alt="AI Vote Helper chatbot interface" style="width:100%; border-radius:8px; border:1px solid var(--border);" />
+          <img src="vote-helper-candidates.png" alt="AI Vote Helper candidate comparison view" style="width:100%; border-radius:8px; border:1px solid var(--border);" />
+          <img src="vote-helper-details.png" alt="AI Vote Helper candidate details view" style="width:100%; border-radius:8px; border:1px solid var(--border);" />
+        </div>
+
+        <!-- Project metadata -->
+        <div class="card" style="margin-top:1.25rem;">
+          <div class="section-label" style="margin-bottom:0.75rem;">Project Details</div>
+          <div style="display:flex; flex-direction:column; gap:0.5rem;">
+            <div style="display:flex; justify-content:space-between; font-size:0.85rem;">
+              <span style="color:var(--text-muted);">Type</span>
+              <span style="color:var(--text); font-family:var(--font-mono); font-size:0.8rem;">Independent / AI Club</span>
+            </div>
+            <div style="display:flex; justify-content:space-between; font-size:0.85rem;">
+              <span style="color:var(--text-muted);">Year</span>
+              <span style="color:var(--text); font-family:var(--font-mono); font-size:0.8rem;">2024</span>
+            </div>
+            <div style="display:flex; justify-content:space-between; font-size:0.85rem;">
+              <span style="color:var(--text-muted);">LLM</span>
+              <span style="color:var(--text); font-family:var(--font-mono); font-size:0.8rem;">Ollama</span>
+            </div>
+            <div style="display:flex; justify-content:space-between; font-size:0.85rem;">
+              <span style="color:var(--text-muted);">Hosted on</span>
+              <span style="color:var(--text); font-family:var(--font-mono); font-size:0.8rem;">Vercel</span>
+            </div>
+            <div style="display:flex; justify-content:space-between; font-size:0.85rem;">
+              <span style="color:var(--text-muted);">Domain</span>
+              <span style="color:var(--purple); font-family:var(--font-mono); font-size:0.8rem; font-weight:700;">Civic Technology</span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /project-visual -->
+
+    </div><!-- /project-layout -->
+
+    <!-- Back to projects -->
+    <div style="text-align:center; padding-bottom:3rem; position:relative; z-index:1;">
+      <a href="project1.html" class="btn btn-outline">&larr; Previous Project: FIFA Dashboard</a>
+    </div>
+
+  </div><!-- /page-content -->
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <p class="footer-name">Sriram Kannan &copy; 2026</p>
+      <div class="footer-icons">
+        <a href="https://www.linkedin.com/in/sriram-kannan-817b6b366/" class="footer-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </a>
+        <a href="https://github.com/Sriram1000" class="footer-icon" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+          </svg>
+        </a>
+      </div>
+      <p class="footer-built">Built with HTML, CSS &amp; JavaScript</p>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Back to top">&#8679;</button>
+  <script src="main.js"></script>
+</body>
+</html>

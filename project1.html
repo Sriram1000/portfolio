@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FIFA 21 Dashboard | Sriram Kannan</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="particles" aria-hidden="true"></div>
+
+  <!-- ===== NAV ===== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav-brand">SK<span style="color:var(--purple);">_</span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="project1.html" class="active" aria-current="page">FIFA Dashboard</a></li>
+      <li><a href="project2.html">AI Vote Helper</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-content">
+
+    <!-- ===== PROJECT HERO ===== -->
+    <div class="project-hero fade-in" aria-label="Project header">
+      <p class="project-hero-label">// project_01</p>
+      <h1 class="project-hero-title">FIFA 21 Data Dashboard</h1>
+      <p class="project-hero-sub">UC Berkeley ATDP: Data Science Lab with R &nbsp;|&nbsp; Summer 2025</p>
+    </div>
+
+    <!-- ===== TWO-COLUMN LAYOUT ===== -->
+    <div class="project-layout">
+
+      <!-- LEFT: Description -->
+      <div class="project-desc">
+
+        <!-- Stat cards -->
+        <div class="stat-cards fade-in" aria-label="Project statistics">
+          <div class="stat-card">
+            <span class="stat-value">18K+</span>
+            <div class="stat-label">Players Analyzed</div>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value">5+</span>
+            <div class="stat-label">Interactive Visualizations</div>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value">R Shiny</span>
+            <div class="stat-label">Web App Framework</div>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value">R² 0.371</span>
+            <div class="stat-label">Regression Model Fit</div>
+          </div>
+        </div>
+
+        <!-- About the project -->
+        <div class="fade-in">
+          <h2 class="section-label" style="margin-top:1.5rem; margin-bottom:0.5rem;">About the Project</h2>
+          <div class="section-divider" style="margin-bottom:1rem;"></div>
+          <p>
+            This interactive data dashboard was built in R and R Shiny as the final project for the
+            UC Berkeley ATDP Data Science Lab. It analyzes the <strong style="color:var(--blue);">FIFA 21 Complete Player Dataset</strong>
+            from Kaggle, which contains detailed statistics on over 18,000 professional football
+            players from around the world.
+          </p>
+          <p>
+            The app allows users to filter players by club, nationality, and individual stats, and
+            explore a suite of visualizations: bar charts of top-paid players, age distribution box
+            plots by nationality, histograms of physical attributes, scatter plots of top performers,
+            and a <strong style="color:var(--blue);">linear regression model</strong> exploring the relationship between player wages
+            and overall rating (R&sup2;&nbsp;=&nbsp;0.371). The project demonstrates skills in EDA,
+            data cleaning, statistical analysis, and interactive data visualization. Dataset sourced
+            from Kaggle.
+          </p>
+        </div>
+
+        <!-- Skills -->
+        <div class="fade-in">
+          <h3 class="section-label" style="margin-bottom:0.6rem;">Skills &amp; Tools</h3>
+          <div class="badges" role="list" aria-label="Skills used">
+            <span class="badge" role="listitem">R</span>
+            <span class="badge" role="listitem">R Shiny</span>
+            <span class="badge" role="listitem">Data Visualization</span>
+            <span class="badge" role="listitem">EDA</span>
+            <span class="badge" role="listitem">Statistical Analysis</span>
+            <span class="badge" role="listitem">Kaggle Dataset</span>
+            <span class="badge" role="listitem">Bootstrap CI</span>
+            <span class="badge" role="listitem">Linear Regression</span>
+          </div>
+        </div>
+
+        <!-- What I learned -->
+        <div class="fade-in">
+          <h3 class="section-label" style="margin-bottom:0.6rem;">What I Learned</h3>
+          <div class="section-divider" style="margin-bottom:1rem;"></div>
+          <p>
+            Working with the FIFA 21 dataset taught me how to explore and visualize real-world sports
+            data at scale, and how thoughtful exploratory analysis can surface surprising patterns,
+            such as how highly-rated players tend to excel simultaneously across multiple skill
+            categories, not just one. I discovered that player wages have a moderate but meaningful
+            correlation with overall rating (R&sup2;&nbsp;=&nbsp;0.371), suggesting that clubs do
+            reward player quality, but that many other factors influence compensation.
+          </p>
+          <p>
+            Building this Shiny app deepened my understanding of data visualization, statistical
+            inference, and how interactive tools can make data exploration accessible to anyone,
+            not just statisticians. Most importantly, this project taught me how data can tell a
+            story in sports: the numbers behind the beautiful game are just as compelling as the
+            game itself.
+          </p>
+        </div>
+
+        <!-- CTA -->
+        <div class="fade-in" style="margin-top:1.5rem;">
+          <a href="https://awesomesk.shinyapps.io/final_project/" class="btn btn-primary" target="_blank" rel="noopener noreferrer" aria-label="View FIFA 21 Dashboard project">View Project</a>
+        </div>
+
+      </div><!-- /project-desc -->
+
+      <!-- RIGHT: Visual -->
+      <div class="project-visual fade-in" aria-label="Project preview">
+        <div style="display:flex; flex-direction:column; gap:0.75rem;">
+          <img src="fifa-intro.png" alt="FIFA 21 Dashboard introduction page showing the app overview" style="width:100%; border-radius:8px; border:1px solid var(--border);" />
+          <img src="fifa-graphics.png" alt="FIFA 21 Dashboard graphics tab showing top-paid players bar chart and age distribution box plot" style="width:100%; border-radius:8px; border:1px solid var(--border);" />
+          <img src="fifa-statistics.png" alt="FIFA 21 Dashboard statistics tab showing mean overall rating by club" style="width:100%; border-radius:8px; border:1px solid var(--border);" />
+        </div>
+
+        <!-- Project metadata card -->
+        <div class="card" style="margin-top:1.25rem;">
+          <div class="section-label" style="margin-bottom:0.75rem;">Project Details</div>
+          <div style="display:flex; flex-direction:column; gap:0.5rem;">
+            <div style="display:flex; justify-content:space-between; font-size:0.85rem;">
+              <span style="color:var(--text-muted);">Course</span>
+              <span style="color:var(--text); font-family:var(--font-mono); font-size:0.8rem;">UC Berkeley ATDP</span>
+            </div>
+            <div style="display:flex; justify-content:space-between; font-size:0.85rem;">
+              <span style="color:var(--text-muted);">Period</span>
+              <span style="color:var(--text); font-family:var(--font-mono); font-size:0.8rem;">Summer 2025</span>
+            </div>
+            <div style="display:flex; justify-content:space-between; font-size:0.85rem;">
+              <span style="color:var(--text-muted);">Dataset</span>
+              <span style="color:var(--text); font-family:var(--font-mono); font-size:0.8rem;">Kaggle · 18,000+ rows</span>
+            </div>
+            <div style="display:flex; justify-content:space-between; font-size:0.85rem;">
+              <span style="color:var(--text-muted);">Grade</span>
+              <span style="color:var(--blue); font-family:var(--font-mono); font-size:0.8rem; font-weight:700;">A</span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /project-visual -->
+
+    </div><!-- /project-layout -->
+
+    <!-- Back to projects -->
+    <div style="text-align:center; padding-bottom:3rem; position:relative; z-index:1;">
+      <a href="project2.html" class="btn btn-outline">Next Project: AI Vote Helper &rarr;</a>
+    </div>
+
+  </div><!-- /page-content -->
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <p class="footer-name">Sriram Kannan &copy; 2026</p>
+      <div class="footer-icons">
+        <a href="https://www.linkedin.com/in/sriram-kannan-817b6b366/" class="footer-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </a>
+        <a href="https://github.com/Sriram1000" class="footer-icon" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+          </svg>
+        </a>
+      </div>
+      <p class="footer-built">Built with HTML, CSS &amp; JavaScript</p>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Back to top">&#8679;</button>
+  <script src="main.js"></script>
+</body>
+</html>
